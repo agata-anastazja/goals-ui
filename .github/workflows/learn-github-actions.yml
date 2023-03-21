@@ -23,10 +23,9 @@ jobs:
       - name: Terraform Plan
         id: plan
         working-directory: terraform
-        run: terraform plan -no-color
-        continue-on-error: true
+        run: terraform plan -no-color -out plan
       - name: Terraform apply
         working-directory: terraform
-        run: terraform apply -auto-approve
-        continue-on-error: true
+        run: terraform apply plan
+
       
