@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "mybucket" {
-  bucket = "agata-goals.com"
+  bucket = "agata-goals2.com"
   
 }
 
