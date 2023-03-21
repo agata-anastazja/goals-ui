@@ -18,10 +18,10 @@ jobs:
           aws-region: us-east-1 
       - name: Terraform Init
         id: init
-        working_dir: terraform
+        working-directory: terraform
         run: terraform init 
       - name: Terraform Plan
         id: plan
-        working_dir: terraform
+        working-directory: terraform
         run: terraform plan -no-color
         continue-on-error: true
